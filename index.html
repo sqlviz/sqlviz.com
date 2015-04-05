@@ -1,84 +1,242 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Sqlviz by sqlviz</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SQLViz - Easy database data visualization">
+
+    <title>SQLViz</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
   </head>
-  <body>
 
-      <header>
-        <h1>Sqlviz</h1>
-        <p>Code for visualization platform</p>
-      </header>
+  <body data-spy="scroll" data-offset="0" data-target="#navigation">
 
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/sqlviz/sqlviz" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/sqlviz/sqlviz/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/sqlviz/sqlviz/tarball/master" class="button">TAR</a></li>
-          </ul>
+    <!-- Fixed navbar -->
+      <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=""><b>SQLViz</b></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#home" class="smothscroll">Welcome</a></li>
+              <li><a href="#desc" class="smothscroll">Description</a></li>
+              <li><a href="#showcase" class="smothScroll">Showcase</a></li>
+              <li><a href="#download" class="smothScroll">Download</a></li>
+            </ul>
+            <div class="nav navbar-nav navbar-right">
+              <iframe src="https://ghbtns.com/github-btn.html?user=sqlviz&repo=sqlviz&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px" class="navbar-btn"></iframe>
+            </div>
+          </div><!--/.nav-collapse -->
         </div>
-      </div><!-- end banner -->
+      </div>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h3>
-<a id="welcome-to-sqlviz" class="anchor" href="#welcome-to-sqlviz" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to SQLviz.</h3>
 
-<p>SQLViz is an easy and open source way to turn SQL into graphical visualization of data within your database. SQLViz supports Postgres and Redshift. It allows for rapid analysis and dissemination of insights locked into your data sets.</p>
+  <section id="home" name="home"></section>
+  <div id="headerwrap">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-lg-12">
+          <h1>Welcome To <b>SQLViz</b></h1>
+          <h3>We did it so you don't have to.</h3>
+          <br>
+          </div>
 
-<pre><code>$ git checkout https://github.com/sqlviz/sqlviz.git
-$ sqlviz/deploy_script/deploy_first_time.sh
-</code></pre>
+          <div class="col-lg-2">
+            <h5>Visualize Your Queries</h5>
+            <p>Use your data queries to generate beautiful charts and graphs.</p>
+            <img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow1.png">
+          </div>
+          <div class="col-lg-8">
+            <img class="img-responsive" src="assets/img/homepage.png" alt="">
+          </div>
+          <div class="col-lg-2">
+            <br>
+            <img class="hidden-xs hidden-sm hidden-md" src="assets/img/arrow2.png">
+            <h5>Email Reports</h5>
+            <p>Run one-off queries, store queries for later, and schedule auto-run email reports.</p>
+          </div>
+        </div>
+      </div> <!--/ .container -->
+  </div><!--/ #headerwrap -->
 
-<h3>
-<a id="charts" class="anchor" href="#charts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Charts</h3>
 
-<p>Charts are the basic element of visualizations.  Each chart is powered by 1 SQL statement.  </p>
+  <section id="desc" name="desc"></section>
+  <!-- INTRO WRAP -->
+  <div id="intro">
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center">Designed with you in mind</h1>
+      </div>
+      <div class="row">
+        <p class="lead">
+          SQLViz is an easy and open source way to turn SQL into graphical visualization of data within your database. SQLViz supports Postgres and Redshift. It allows for rapid analysis and dissemination of insights locked into your data sets.
+        </p>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="assets/img/Open-Sign.svg" class="icon" alt="">
+            <h3>Open Source</h3>
+            <p>Get started today, for free! You can rest assured that this product won't disappear tomorrow.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/Love-Letter.svg" class="icon" alt="">
+            <h3>Scheduled Reports</h3>
+            <p>Need to receive a report on a recurring basis? Setup an email schedule for it!</p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/Locked-Cloud.svg" class="icon" alt="">
+            <h3>Fully Secure</h3>
+            <p>SQLViz is a self-hosted solution so you can have full control over your data's access rights.</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      </div> <!--/ .container -->
+  </div><!--/ #introwrap -->
 
-<h3>
-<a id="dashboards" class="anchor" href="#dashboards" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dashboards</h3>
+  <!-- FEATURES WRAP -->
+  <div id="features">
+    <div class="container">
+      <div class="row">
+        <h1 class="centered">What's in SQLViz?</h1>
+        <br>
+        <br>
+        <div class="col-lg-6 centered">
+          <img class="centered" src="assets/img/mobile.png" alt="">
+        </div>
 
-<p>Dashboards are combinations of multiple charts.</p>
+        <div class="col-lg-6">
+          <h3>Some Features</h3>
+          <br>
+        <!-- ACCORDION -->
+                <div class="accordion ac" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                            Charts
+                            </a>
+                        </div><!-- /accordion-heading -->
+                        <div id="collapseOne" class="accordion-body collapse in">
+                            <div class="accordion-inner">
+                              <p>Charts are the basic element of visualizations. Each chart is powered by 1 SQL statement.</p>
+                </div><!-- /accordion-inner -->
+                        </div><!-- /collapse -->
+                    </div><!-- /accordion-group -->
+                    <br>
 
-<h3>
-<a id="email-reports" class="anchor" href="#email-reports" aria-hidden="true"><span class="octicon octicon-link"></span></a>Email Reports</h3>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                            Dashboards
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                              <p>Dashboards are combinations of multiple charts.</p>
+                </div><!-- /accordion-inner -->
+                        </div><!-- /collapse -->
+                    </div><!-- /accordion-group -->
+                    <br>
 
-<p>Dashboards can be emailed on a set schedule.  </p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/sqlviz">sqlviz</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
+                     <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                            Email Reports
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                              <p>Dashboards can be emailed on a set schedule.</p>
+                </div><!-- /accordion-inner -->
+                        </div><!-- /collapse -->
+                    </div><!-- /accordion-group -->
+                    <br>
+          </div><!-- Accordion -->
+        </div>
+      </div>
+    </div><!--/ .container -->
+  </div><!--/ #features -->
+
+
+  <section id="showcase" name="showcase"></section>
+  <div id="showcase">
+    <div class="container">
+      <div class="row">
+        <h1 class="centered">Some Screenshots</h1>
+        <br>
+        <div class="col-lg-8 col-lg-offset-2">
+          <div id="carousel-example-generic" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="assets/img/item-01.png" alt="">
+              </div>
+              <div class="item">
+                <img src="assets/img/item-02.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+    </div><!-- /container -->
+  </div>
+
+
+  <section id="download" name="download"></section>
+  <div id="footerwrap">
+    <div class="container">
+      <h1 class="centered">Download & Install</h1>
+      <div class="row">
+        <div class="col-xs-offset-2 col-xs-8 col-sm-offset-3 col-sm-6">
+          <p>
+          <ol>
+            <li>Download SQLViz</li>
+            <li>Extract SQLViz on your Ubuntu Server</li>
+            <li>Run <kbd>deploy_script/deploy_first_time.sh</kbd></li>
+          </ol>
+          </p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="https://github.com/sqlviz/sqlviz/zipball/master" class="btn btn-lg btn-primary">Download SQLViz</a>
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-55739949-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+  </div>
+  <div id="footer">
+    <div class="container">
+      <p class="pull-right">Copyright &copy; 2015 SQLViz</p>
+    </div>
+  </div>
 
+
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="assets/js/smoothscroll.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script>
+  $('.carousel').carousel({
+    interval: 3500
+  })
+  </script>
   </body>
 </html>
